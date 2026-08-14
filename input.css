@@ -554,3 +554,53 @@
   max-height: calc(var(--stage-h) - 16px);
   border-radius: 24px;
 }
+
+/* ===== Perbaikan tampilan mobile ===== */
+@media (max-width: 767px) {
+  /* Rapatkan jarak intro ke Selected Works */
+  #intro {
+    min-height: auto;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+  }
+
+  #intro .mb-32 {
+    margin-bottom: 4rem;
+  }
+
+  #works {
+    margin-top: 0 !important;
+  }
+  /* Header: sembunyikan nama di tengah, sisakan menu saja */
+  #siteHeader .grid-cols-3 > div.flex.justify-center {
+    visibility: hidden;
+  }
+
+  .site-header nav {
+    gap: 1rem;
+    font-size: 14px;
+  }
+
+  /* Bintang: kecilkan dan sembunyikan yang menutupi teks */
+  .star {
+    width: 60px !important;
+    height: 60px !important;
+  }
+
+  .star-3,
+  .star-6,
+  .star-7,
+  .star-8 {
+    display: none;
+  }
+
+  /* Letter card: kurangi padding dalam */
+  .letter-inner {
+    padding: 28px 20px;
+  }
+
+  /* Spec card halaman project */
+  .spec-inner {
+    padding: 20px 16px;
+  }
+}
