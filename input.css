@@ -557,7 +557,48 @@
 
 /* ===== Perbaikan tampilan mobile ===== */
 @media (max-width: 767px) {
-  /* Rapatkan jarak intro ke Selected Works */
+  /* Nama besar di landing page */
+  #nameFloat {
+    font-size: 40px !important;
+    z-index: 30 !important;
+  }
+
+  /* Kolom tengah header landing page (target pendaratan nama) */
+  #siteHeader .grid-cols-3 > div.flex.justify-center {
+    visibility: hidden;
+  }
+
+  /* Nama di header halaman About & Project */
+  .site-header .font-nazla {
+    font-size: 44px !important;
+  }
+
+  /* Menu header */
+  .site-header nav {
+    gap: 1rem;
+    font-size: 14px;
+  }
+
+  /* Judul "A Couple More Things!" */
+  #scrollTitle {
+    font-size: 28px !important;
+    line-height: 1.15;
+  }
+
+  /* Bintang */
+  .star {
+    width: 60px !important;
+    height: 60px !important;
+  }
+
+  .star-3,
+  .star-6,
+  .star-7,
+  .star-8 {
+    display: none;
+  }
+
+  /* Jarak intro ke Selected Works */
   #intro {
     min-height: auto;
     padding-top: 4rem;
@@ -571,30 +612,8 @@
   #works {
     margin-top: 0 !important;
   }
-  /* Header: sembunyikan nama di tengah, sisakan menu saja */
-  #siteHeader .grid-cols-3 > div.flex.justify-center {
-    visibility: hidden;
-  }
 
-  .site-header nav {
-    gap: 1rem;
-    font-size: 14px;
-  }
-
-  /* Bintang: kecilkan dan sembunyikan yang menutupi teks */
-  .star {
-    width: 60px !important;
-    height: 60px !important;
-  }
-
-  .star-3,
-  .star-6,
-  .star-7,
-  .star-8 {
-    display: none;
-  }
-
-  /* Letter card: kurangi padding dalam */
+  /* Letter card */
   .letter-inner {
     padding: 28px 20px;
   }
