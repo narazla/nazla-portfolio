@@ -24,6 +24,7 @@ const PROJECTS = [
       "Village Government. I worked across the stack over three agile sprints, ending with user acceptance testing " +
       "alongside the village library staff. The dashboard is server-rendered with Blade while the " +
       "public portal is a React SPA, with both sides talking to the same REST API.",
+    role: "Fullstack Developer",
     tech: [
       "Laravel (Backend & Session Auth)",
       "MySQL + Eloquent ORM (Database)",
