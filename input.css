@@ -563,14 +563,9 @@
     z-index: 30 !important;
   }
 
-  /* Kolom tengah header landing page (target pendaratan nama) */
-  #siteHeader .grid-cols-3 > div.flex.justify-center {
+  /* Sembunyikan nama di header untuk semua halaman */
+  .site-header .grid-cols-3 > div.flex.justify-center {
     visibility: hidden;
-  }
-
-  /* Nama di header halaman About & Project */
-  .site-header .font-nazla {
-    font-size: 44px !important;
   }
 
   /* Menu header */
