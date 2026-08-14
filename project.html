@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project — Nazla Azzahra</title>
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="./fonts/display/AstonScriptBold-Bold.woff2" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="./fonts/derringer/Derringer-Serial-Regular.woff2" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="./fonts/derringer/Derringer-Serial-Bold.woff2" />
+  <link rel="stylesheet" href="./dist/output.css" />
+</head>
+
+<body class="bg-white text-black font-derringer" id="top">
+
+  <!-- HEADER -->
+  <header class="site-header header-active sticky top-0 z-40 bg-[#C2DC80] text-black">
+    <div class="mx-auto max-w-6xl px-6 h-20 grid grid-cols-3 items-center">
+      <nav class="flex gap-6 text-base font-medium tracking-wide">
+        <a class="opacity-80 hover:opacity-100 transition" href="index.html">Home</a>
+        <a class="opacity-80 hover:opacity-100 transition" href="about.html">About</a>
+      </nav>
+
+      <div class="flex justify-center">
+        <a href="index.html" style="display:block; position:relative; width:100%; height:80px;">
+          <span
+            class="font-nazla"
+            style="position:absolute; left:50%; top:calc(50% + 4px);
+                   transform:translate(-50%,-50%) scale(0.34);
+                   transform-origin:center center;
+                   font-size:clamp(56px, 7vw, 132px);
+                   letter-spacing:-0.025em;
+                   line-height:1;
+                   white-space:nowrap;"
+          >Nazla Azzahra</span>
+        </a>
+      </div>
+
+      <nav class="flex justify-end gap-6 text-base font-medium tracking-wide">
+        <a class="opacity-80 hover:opacity-100 transition"
+           href="./assets/resume/Nazla-Azzahra-Resume.pdf"
+           target="_blank" rel="noopener">
+          Resume
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- NOT FOUND -->
+  <section id="notFound" class="hidden mx-auto max-w-5xl px-6 py-32 text-center">
+    <h1 class="font-nazla text-[clamp(36px,4vw,64px)] mb-6">Project not found</h1>
+    <p class="mb-10 text-lg">The project you are looking for is not on the list.</p>
+    <a href="index.html#works" class="underline underline-offset-4 hover:opacity-70 transition">
+      Back to selected works
+    </a>
+  </section>
+
+  <!-- PROJECT -->
+  <div id="projectRoot" class="hidden">
+    <!-- COVER -->
+    <section class="w-full">
+      <div class="relative w-full aspect-[21/9] bg-[#C2DC80] overflow-hidden">
+        <img id="pCover" src="" alt="" class="absolute inset-0 w-full h-full object-cover" />
+      </div>
+    </section>
+
+    <!-- TITLE -->
+    <section class="mx-auto max-w-5xl px-6 pt-24 text-center">
+      <h1 id="pName" class="font-nazla text-[clamp(44px,6vw,104px)] leading-none"></h1>
+      <p id="pTagline" class="text-[clamp(15px,1.5vw,22px)] italic max-w-2xl mx-auto"></p>
+    </section>
+
+    <!-- OVERVIEW + SPEC -->
+    <section class="mx-auto max-w-5xl px-6 pt-16">
+      <p id="pOverview"
+         class="max-w-3xl mx-auto text-center text-[clamp(15px,1.35vw,20px)] leading-[1.7] mb-16"></p>
+
+      <div class="spec-card max-w-3xl mx-auto">
+        <div class="spec-inner">
+          <dl id="pSpec" class="w-full"></dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAROUSEL -->
+    <section id="pCarousel" class="mx-auto max-w-6xl px-6 pt-24">
+      <div class="flex items-center gap-4 md:gap-8">
+        <button id="prevSlide" type="button" aria-label="Previous slide"
+                class="carousel-arrow">&#8249;</button>
+
+        <div class="carousel-stage">
+          <div id="slideHolder" class="w-full h-full flex items-center justify-center"></div>
+        </div>
+
+        <button id="nextSlide" type="button" aria-label="Next slide"
+                class="carousel-arrow">&#8250;</button>
+      </div>
+
+      <div id="slideDots" class="flex justify-center gap-3 mt-8"></div>
+    </section>
+
+    <!-- NAV -->
+    <section class="mx-auto max-w-6xl px-6 pt-24 pb-24">
+      <div class="border-t border-black/70 pt-8 flex items-center justify-between gap-6">
+        <a id="prevProject" href="#" class="text-base hover:underline underline-offset-4 transition"></a>
+        <a id="nextProject" href="#" class="text-base text-right hover:underline underline-offset-4 transition"></a>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-black border-t border-[#C2DC80]">
+    <div class="mx-auto max-w-6xl px-6 py-12 text-[#C2DC80]">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+        <div class="font-nazla text-[clamp(28px,3vw,42px)] leading-none">
+          Nazla Azzahra
+        </div>
+        <nav class="flex gap-8 text-base font-medium">
+          <a href="https://www.linkedin.com/in/nazlaazzahrahermana"
+             target="_blank" rel="noopener"
+             class="opacity-80 hover:opacity-100 transition hover:underline underline-offset-4">LinkedIn</a>
+          <a href="https://github.com/narazla"
+             target="_blank" rel="noopener"
+             class="opacity-80 hover:opacity-100 transition hover:underline underline-offset-4">GitHub</a>
+          <a href="https://www.instagram.com/nazvla"
+             target="_blank" rel="noopener"
+             class="opacity-80 hover:opacity-100 transition hover:underline underline-offset-4">Instagram</a>
+        </nav>
+      </div>
+      <div class="mt-12 pt-6 border-t border-[#C2DC80] text-center text-sm opacity-80">
+        &copy; 2026. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/projects.js"></script>
+  <script src="./js/project.js"></script>
+</body>
+</html>

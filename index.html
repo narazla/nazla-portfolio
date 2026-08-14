@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nazla Azzahra — Portfolio</title>
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="./fonts/display/AstonScriptBold-Bold.woff2" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="./fonts/derringer/Derringer-Serial-Regular.woff2" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+        href="./fonts/derringer/Derringer-Serial-Bold.woff2" />
+  <link rel="stylesheet" href="./dist/output.css" />
+</head>
+
+<body class="bg-white text-black overflow-x-hidden font-derringer" id="top">
+
+  <!-- HEADER -->
+  <header
+    id="siteHeader"
+    class="site-header fixed top-0 left-0 right-0 z-40
+           bg-[#C2DC80] text-black
+           opacity-0 -translate-y-4
+           pointer-events-none
+           transition-all duration-500 ease-out"
+  >
+    <div class="mx-auto max-w-6xl px-6 h-20 grid grid-cols-3 items-center">
+      <!-- kiri -->
+      <nav class="flex gap-6 text-base font-medium tracking-wide">
+        <a class="opacity-100 underline underline-offset-8" href="#top">Home</a>
+        <a class="opacity-80 hover:opacity-100 transition" href="about.html">About</a>
+      </nav>
+
+      <!-- tengah: target tempat nama mendarat -->
+      <div class="flex justify-center">
+        <span id="nameTarget" class="inline-block h-0 w-0"></span>
+      </div>
+
+      <!-- kanan -->
+      <nav class="flex justify-end gap-6 text-base font-medium tracking-wide">
+        <a class="opacity-80 hover:opacity-100 transition"
+           href="./assets/resume/Nazla-Azzahra-Resume.pdf"
+           target="_blank" rel="noopener">
+          Resume
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="heroSpace" class="relative h-[140vh]">
+    <!-- panel hijau -->
+    <div
+      id="heroPanel"
+      class="absolute left-0 right-0 bottom-0 h-[85vh] z-10"
+      style="background:#C2DC80;"
+      aria-hidden="true"
+    ></div>
+
+    <!-- arrow wrapper -->
+    <div
+      id="heroArrow"
+      class="fixed left-0 top-0 z-30 select-none pointer-events-none opacity-100"
+      style="will-change: transform, opacity;"
+      aria-hidden="true"
+    >
+      <div
+        id="heroArrowInner"
+        class="text-black arrow-float"
+        style="font-size: 42px; line-height: 1;"
+      >
+        ↓
+      </div>
+    </div>
+
+    <!-- nama besar: pakai DISPLAY font -->
+    <div
+      id="nameFloat"
+      class="fixed z-50 tracking-tight select-none pointer-events-none text-black font-nazla"
+      style="
+        left:0; top:0;
+        will-change: transform, opacity;
+        font-size: clamp(56px, 7vw, 132px);
+      "
+    >
+      Nazla Azzahra
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <main class="mx-auto max-w-5xl px-6">
+    <section id="intro" class="relative min-h-screen flex items-center justify-center">
+      <!-- Stars container -->
+      <div id="starsContainer" class="stars-container">
+        <div class="star star-1 star-type-a"></div>
+        <div class="star star-2 star-type-a"></div>
+        <div class="star star-3 star-type-b"></div>
+        <div class="star star-4 star-type-a"></div>
+        <div class="star star-5 star-type-a"></div>
+        <div class="star star-6 star-type-b"></div>
+        <div class="star star-7 star-type-a"></div>
+        <div class="star star-8 star-type-a"></div>
+      </div>
+      
+      <div class="w-full">
+        <h1 class="text-center text-[clamp(16px,2vw,36px)] leading-[1.2] font-normal max-w-5xl mx-auto mb-8">
+          I'm <span class="font-bold">Nara</span>, a Jakarta-based <span class="font-bold">Software Engineer</span>. I work full stack across web and mobile.
+          I'm passionate about building applications that are clean, reliable,
+          and genuinely pleasant to use.
+        </h1>
+        <p class="text-center text-[clamp(16px,2vw,36px)] leading-[1.2] font-normal max-w-4xl mx-auto mb-32">
+          I know exceptional work takes intention, empathy, and attention to detail.
+        </p>
+        <div class="text-center">
+          <span class="inline-block font-nazla text-[clamp(24px,2.5vw,36px)]">
+            View selected works
+          </span>
+        </div>
+      </div>
+    </section>
+        <!-- Selected Works -->
+        <div id="works" class="-mt-20 grid grid-cols-1 md:grid-cols-2 gap-10 scroll-mt-28">
+        <!-- 1. Kaloka -->
+        <a href="project.html?id=kaloka" class="group block">
+          <div class="relative border border-black/70 bg-white overflow-hidden">
+            <!-- image frame -->
+            <div class="relative w-full aspect-[16/10]">
+              <img
+                src="./assets/cover/cover5.png"
+                alt="Cover Kaloka"
+                class="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
+              />
+              <!-- hover overlay abu -->
+              <div class="absolute inset-0 bg-black/20 opacity-0 transition-opacity duration-300 ease-out group-hover:opacity-100"></div>
+            </div>
+          </div>
+
+          <h3 class="mt-2 text-[clamp(18px,2vw,28px)] font-bold group-hover:underline underline-offset-4">
+            Kaloka
+          </h3> 
+        </a>
+
+        <!-- 2. Excellera -->
+        <a href="project.html?id=excellera" class="group block">
+          <div class="relative border border-black/70 bg-white overflow-hidden">
+            <!-- image frame -->
+            <div class="relative w-full aspect-[16/10]">
+              <img
+                src="./assets/cover/cover1.png"
+                alt="Cover Excellera"
+                class="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
+              />
+              <!-- hover overlay abu -->
+              <div class="absolute inset-0 bg-black/20 opacity-0 transition-opacity duration-300 ease-out group-hover:opacity-100"></div>
+            </div>
+          </div>
+
+          <h3 class="mt-2 text-[clamp(18px,2vw,28px)] font-bold group-hover:underline underline-offset-4">
+            Excellera
+          </h3>
+        </a>
+
+        <!-- 3. Agrivo -->
+        <a href="project.html?id=agrivo" class="group block">
+          <div class="relative border border-black/70 bg-white overflow-hidden">
+            <!-- image frame -->
+            <div class="relative w-full aspect-[16/10]">
+              <img
+                src="./assets/cover/cover6.png"
+                alt="Cover Agrivo"
+                class="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
+              />
+              <!-- hover overlay abu -->
+              <div class="absolute inset-0 bg-black/20 opacity-0 transition-opacity duration-300 ease-out group-hover:opacity-100"></div>
+            </div>
+          </div>
+
+          <h3 class="mt-2 text-[clamp(18px,2vw,28px)] font-bold group-hover:underline underline-offset-4">
+            Agrivo
+          </h3>
+        </a>
+
+        <!-- 4. Jangkau -->
+        <a href="project.html?id=jangkau" class="group block">
+          <div class="relative border border-black/70 bg-white overflow-hidden">
+            <!-- image frame -->
+            <div class="relative w-full aspect-[16/10]">
+              <img
+                src="./assets/cover/cover7.png"
+                alt="Cover Jangkau"
+                class="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
+              />
+              <!-- hover overlay abu -->
+              <div class="absolute inset-0 bg-black/20 opacity-0 transition-opacity duration-300 ease-out group-hover:opacity-100"></div>
+            </div>
+          </div>
+
+          <h3 class="mt-2 text-[clamp(18px,2vw,28px)] font-bold group-hover:underline underline-offset-4">
+            Jangkau
+          </h3>
+        </a>
+
+        <!-- 5. Nestica -->
+        <a href="project.html?id=nestica" class="group block">
+          <div class="relative border border-black/70 bg-white overflow-hidden">
+            <!-- image frame -->
+            <div class="relative w-full aspect-[16/10]">
+              <img
+                src="./assets/cover/cover3.png"
+                alt="Cover Nestica"
+                class="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
+              />
+              <!-- hover overlay abu -->
+              <div class="absolute inset-0 bg-black/20 opacity-0 transition-opacity duration-300 ease-out group-hover:opacity-100"></div>
+            </div>
+          </div>
+
+          <h3 class="mt-2 text-[clamp(18px,2vw,28px)] font-bold group-hover:underline underline-offset-4">
+            Nestica
+          </h3>
+        </a>
+
+        <!-- 6. Dust Bunny Unite! -->
+        <a href="project.html?id=dust-bunny" class="group block">
+          <div class="relative border border-black/70 bg-white overflow-hidden">
+            <!-- image frame -->
+            <div class="relative w-full aspect-[16/10]">
+              <img
+                src="./assets/cover/cover2.png"
+                alt="Cover Dust Bunny Unite!"
+                class="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
+              />
+              <!-- hover overlay abu -->
+              <div class="absolute inset-0 bg-black/20 opacity-0 transition-opacity duration-300 ease-out group-hover:opacity-100"></div>
+            </div>
+          </div>
+
+          <h3 class="mt-2 text-[clamp(18px,2vw,28px)] font-bold group-hover:underline underline-offset-4">
+            Dust Bunny Unite!
+          </h3>
+        </a>
+      </div>
+  </main>
+
+<section class="mt-24 bg-[#C2DC80] py-32">
+<h2
+  id="scrollTitle"
+  class="text-center font-nazla text-[clamp(36px,4vw,72px)] mb-20 text-black will-change-transform"
+>
+  A Couple More Things!
+</h2>
+
+  <div class="mx-auto max-w-6xl px-6 grid grid-cols-1 md:grid-cols-2 gap-20">
+
+    <!-- Card kiri -->
+<a
+  href="mailto:narazlaazzahra@gmail.com"
+  class="block letter-card rotate-[-4deg]"
+>
+  <div class="letter-inner">
+    <h3 class="text-4xl font-bold mb-6 text-black">
+      WANT TO WORK WITH ME?
+    </h3>
+
+    <p class="send-email mb-2 text-black">
+      Send me an email:
+    </p>
+
+    <p class="italic text-black transition hover:underline underline-offset-4">
+      narazlaazzahra@gmail.com
+    </p>
+  </div>
+</a>
+
+
+    <!-- Card kanan -->
+<a
+  href="about.html"
+  class="block letter-card rotate-[3deg]"
+>
+  <div class="letter-inner flex flex-col items-center justify-center">
+    <h3 class="text-4xl font-bold mb-6 text-center text-black">
+      CLICK HERE TO KNOW MORE ABOUT ME
+    </h3>
+  </div>
+</a>
+
+    </div>
+  </div>
+</section>
+
+  <script src="./js/main.js"></script>
+<footer class="bg-black border-t border-[#C2DC80]">
+  <div class="mx-auto max-w-6xl px-6 py-12 text-[#C2DC80]">
+
+    <!-- Top row -->
+    <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+
+      <!-- Left: Name -->
+      <div class="font-nazla text-[clamp(28px,3vw,42px)] leading-none">
+        Nazla Azzahra
+      </div>
+
+      <!-- Right: Social links -->
+      <nav class="flex gap-8 text-base font-medium">
+        <a
+          href="https://www.linkedin.com/in/nazlaazzahrahermana?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+          target="_blank"
+          rel="noopener"
+          class="opacity-80 hover:opacity-100 transition hover:underline underline-offset-4"
+        >
+          LinkedIn
+        </a>
+        <a
+          href="https://github.com/narazla"
+          target="_blank"
+          rel="noopener"
+          class="opacity-80 hover:opacity-100 transition hover:underline underline-offset-4"
+        >
+          GitHub
+        </a>
+        <a
+          href="https://www.instagram.com/nazvla"
+          target="_blank"
+          rel="noopener"
+          class="opacity-80 hover:opacity-100 transition hover:underline underline-offset-4"
+        >
+          Instagram
+        </a>
+      </nav>
+
+    </div>
+
+    <!-- Bottom line -->
+    <div class="mt-12 pt-6 border-t border-[#C2DC80] text-center text-sm opacity-80">
+      © 2026. All rights reserved.
+    </div>
+
+  </div>
+</footer>
+</body>
+</html>
